@@ -1,0 +1,20 @@
+.about {
+  margin-bottom: 58px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.about__list {
+  @include list-reset;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $basic-black;
+}
+
+.about__item:not(:last-of-type) {
+  margin-bottom: 30px;
+}

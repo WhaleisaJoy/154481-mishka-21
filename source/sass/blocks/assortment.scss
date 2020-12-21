@@ -1,0 +1,55 @@
+.assortment {
+  margin-bottom: 31px;
+  background-color: #F9F9F9;
+  background-image: url(../img/assortment-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.assortment__title {
+  margin: 0;
+  padding: 73px 0 120px;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: $basic-black;
+}
+
+.assortment__list {
+  @include list-reset;
+}
+
+.assortment__item {
+  cursor: pointer;
+}
+
+.assortment__item--decor {
+  background-color: $assortment-item-decor-background;
+
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: $assortment-item-decor-background-active;
+  }
+}
+
+.assortment__item--toys {
+  background-color: $assortment-item-toys-background;
+
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: $assortment-item-toys-background-active;
+  }
+}
+
+.assortment__link {
+  display: block;
+  padding: 25px 39px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  align-items: center;
+  color: $basic-white;
+}

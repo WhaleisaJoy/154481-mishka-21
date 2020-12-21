@@ -1,0 +1,28 @@
+.site-list{
+  @include list-reset;
+}
+
+.site-list__item {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+// .site-list__item:not(:last-of-type) {
+//   box-shadow: 0px 1px 0px $menu-shadow, inset 0px 1px 0px $menu-shadow;
+// }
+
+.site-list__item a {
+  display: block;
+  padding: 28px 76px;
+  color: $basic-black;
+}

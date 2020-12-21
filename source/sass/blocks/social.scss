@@ -1,0 +1,9 @@
+.social {
+  margin-bottom: 30px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid $footer-social-line;
+}
+
+.social__list {
+  @include list-reset;
+}

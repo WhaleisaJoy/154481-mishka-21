@@ -1,0 +1,15 @@
+.link {
+  color: $basic-dark;
+  text-decoration: underline;
+  text-decoration-color: $link-underline;
+
+  &:hover,
+  &:focus {
+    color: $link-underline-active;
+    text-decoration-color: $link-underline-active;
+  }
+
+  &:active {
+    text-decoration-color: rgba($link-underline-active, 0.1);
+  }
+}
