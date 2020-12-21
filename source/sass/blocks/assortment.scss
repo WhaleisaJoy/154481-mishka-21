@@ -1,7 +1,7 @@
 .assortment {
   margin-bottom: 31px;
-  background-color: #F9F9F9;
-  background-image: url(../img/assortment-bg.jpg);
+  background-color: $assortment-background;
+  background-image: url("../img/assortment-bg.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -29,7 +29,7 @@
 
   &:hover,
   &:focus,
-  &:active{
+  &:active {
     background-color: $assortment-item-decor-background-active;
   }
 }
@@ -39,7 +39,7 @@
 
   &:hover,
   &:focus,
-  &:active{
+  &:active {
     background-color: $assortment-item-toys-background-active;
   }
 }
