@@ -5,8 +5,10 @@
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
+  background-color: $basic-white;
   color: $basic-dark;
   border: 2px solid $basic-dark;
+  cursor: pointer;
 
   &:hover,
   &:focus {
