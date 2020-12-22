@@ -1,0 +1,30 @@
+.reviews__title {
+  margin-bottom: 14px;
+}
+
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.reviews__author-name {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.reviews__author-nick {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 30px;
+}
