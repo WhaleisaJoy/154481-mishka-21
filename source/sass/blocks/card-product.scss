@@ -1,0 +1,40 @@
+.card-product {
+  border: 1px solid $catalog-item-line;
+}
+
+.card-product__product-link {
+  display: block;
+}
+
+.card-product__img {
+  display: block;
+  margin-bottom: 28px;
+}
+
+.card-product__title {
+  margin: 0;
+  margin-bottom: 6px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.card-product__description {
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+  font-size: 13px;
+  line-height: 30px;
+  color: $basic-dark;
+}
+
+.card-product__price {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: $basic-black;
+}

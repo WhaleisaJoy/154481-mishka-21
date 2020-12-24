@@ -1,0 +1,8 @@
+.catalog__list {
+  @include list-reset;
+  margin-bottom: 30px;
+}
+
+.catalog__item:not(:last-of-type) {
+  margin-bottom: 30px;
+}
