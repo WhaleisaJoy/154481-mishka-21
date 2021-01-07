@@ -1,0 +1,29 @@
+.slider__item {
+  display: none;
+
+  &--current {
+    display: block;
+  }
+}
+
+.slider__controls {
+  display: flex;
+
+  @media (max-width: $tablet-width - 1) {
+    margin-bottom: 28px;
+    border: 1px solid $line-color;
+  }
+}
+
+.slider__button {
+  width: 50%;
+  min-height: 52px;
+  background-color: $basic-white;
+  border: none;
+
+  @media (max-width: $tablet-width - 1) {
+    &--prev {
+      border-right: 1px solid $line-color;
+    }
+  }
+}

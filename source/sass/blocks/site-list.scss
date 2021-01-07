@@ -1,5 +1,11 @@
 .site-list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    grid-area: site-list;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .site-list__item {
@@ -15,6 +21,21 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-of-type) {
+      margin-right: 35px;
+    }
+  }
+}
+
+.site-list__item--new-arrivals,
+.site-list__item--sale {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 // .site-list__item:not(:last-of-type) {
@@ -25,4 +46,8 @@
   display: block;
   padding: 28px 76px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
