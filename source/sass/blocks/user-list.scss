@@ -8,6 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: auto;
     justify-self: center;
   }
 }
