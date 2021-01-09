@@ -1,3 +1,17 @@
+.form__wrapper {
+  margin: 0 auto 55px;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+  }
+}
+
 .form__text-intro {
   margin: 0;
   margin-bottom: 29px;
