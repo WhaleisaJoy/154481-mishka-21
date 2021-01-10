@@ -1,9 +1,13 @@
-.social {
-  margin-bottom: 30px;
-  padding-bottom: 27px;
-  border-bottom: 1px solid $footer-social-line;
-}
-
 .social__list {
   @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social__item {
+  &:not(:last-of-type) {
+    margin-right: 41px;
+  }
 }

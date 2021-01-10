@@ -1,9 +1,33 @@
+.reviews__wrapper {
+  position: relative;
+  max-width: 1150px;
+  margin: 0 auto 38px;
+  padding: 0 30px 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+    padding: 0 50px 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+    padding: 0 50px 67px 224px;
+  }
+}
+
 .reviews__title {
+  margin: 0;
   margin-bottom: 14px;
 }
 
 .reviews__list {
   @include list-reset;
+
+  margin-bottom: 30px;
+}
+
+.reviews__blockqute {
+  margin: 0;
 }
 
 .reviews__text {
@@ -27,4 +51,20 @@
   padding: 0;
   font-size: 17px;
   line-height: 30px;
+}
+
+.reviews__controls {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    right: 69px;
+  }
+}
+
+.reviews__button {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
 }

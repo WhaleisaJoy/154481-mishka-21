@@ -1,0 +1,58 @@
+.main-nav {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas:
+      "logo      user-list"
+      "site-list delivery";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas:
+      "site-list logo user-list"
+      "site-list .    delivery";
+    grid-template-columns: 1fr 150px 1fr;
+  }
+}
+
+.main-nav__logo {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    grid-area: logo;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
+  }
+}
+
+.main-nav__logo-image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__delivery {
+  display: none;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    grid-area: delivery;
+    justify-self: flex-end;
+  }
+}

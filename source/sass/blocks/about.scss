@@ -1,5 +1,17 @@
-.about {
-  margin-bottom: 58px;
+.about__wrapper {
+  max-width: 1150px;
+  margin: 0 auto 58px;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 83px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+    padding-left: 224px;
+  }
 }
 
 .about__title {
@@ -9,12 +21,32 @@
 
 .about__list {
   @include list-reset;
+
+  display: grid;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+  }
 }
 
-.about__item:not(:last-of-type) {
-  margin-bottom: 30px;
+.about__item {
+  max-width: 325px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  &:nth-child(2n) {
+    order: 1;
+
+    @media (min-width: $tablet-width) {
+      order: 0;
+    }
+  }
 }

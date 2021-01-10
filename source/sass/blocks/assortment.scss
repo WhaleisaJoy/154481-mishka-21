@@ -1,9 +1,17 @@
 .assortment {
-  margin-bottom: 31px;
   background-color: $assortment-background;
-  background-image: url("../img/assortment-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  //background-image: url("../img/assortment-bg.jpg");
+  //background-repeat: no-repeat;
+  //background-position: 0 0;
+}
+
+.assortment__wrapper {
+  max-width: 1150px;
+  margin: 0 auto 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
 
 .assortment__title {
@@ -18,9 +26,17 @@
 
 .assortment__list {
   @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .assortment__item {
+  width: 100%;
   cursor: pointer;
 }
 

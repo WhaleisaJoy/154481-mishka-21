@@ -1,7 +1,25 @@
+.user-list {
+  @media (min-width: $tablet-width) {
+    grid-area: user-list;
+    grid-column: 1 / -1;
+    justify-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: auto;
+    justify-self: center;
+  }
+}
+
 .user-list__item {
+  display: block;
+  padding: 28px 76px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  color: $basic-black;
 
   &:hover,
   &:focus {
@@ -11,10 +29,8 @@
   &:active {
     opacity: 0.3;
   }
-}
 
-.user-list__item a {
-  display: block;
-  padding: 28px 76px;
-  color: $basic-black;
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
