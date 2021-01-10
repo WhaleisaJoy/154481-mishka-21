@@ -2,10 +2,25 @@
   background-color: $page-main-header-background;
 }
 
+.page-main-header__wrapper {
+  margin: 0 auto 17px;
+  padding: 74px 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    padding: 74px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    margin-bottom: 99px;
+    padding: 95px 50px;
+  }
+}
+
 .page-main-header__title {
   margin: 0;
-  margin-bottom: 17px;
-  padding: 74px 0;
 }
 
 .page-main-header__title--catalog {
