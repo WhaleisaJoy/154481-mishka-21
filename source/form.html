@@ -83,8 +83,8 @@
               </div>
             </fieldset>
 
-            <fieldset class="order-form__fieldset">
-              <div class="order-form__fieldset-wrapper">
+            <fieldset class="order-form__fieldset order-form__fieldset--bg-color">
+              <div class="order-form__fieldset-wrapper order-form__fieldset-wrapper--bg-color">
                 <legend class="order-form__legend order-form__legend--checkbox">ЦВет</legend>
                 <ul class="order-form__list order-form__list--checkbox">
                   <li class="order-form__option order-form__option--checkbox">
@@ -135,26 +135,33 @@
               </div>
             </fieldset>
 
-            <fieldset class="order-form__fieldset">
-              <legend class="order-form__legend">тел</legend>
-              <label class="visually-hidden order-form__label" for="order-form-phone">телефон:</label>
-              <input class="order-form__input order-form__input-text order-form__input-text--phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="order-form-phone" required>
+            <fieldset class="order-form__fieldset order-form__fieldset--bg-color order-form__fieldset--without-margin-bottom">
+              <div class="order-form__fieldset-wrapper order-form__fieldset-wrapper--bg-color order-form__fieldset-wrapper--without-padding-bottom">
+                <legend class="order-form__legend">тел</legend>
+                <label class="visually-hidden order-form__label" for="order-form-phone">телефон:</label>
+                <input class="order-form__input order-form__input-text order-form__input-text--phone order-form__input-text--full-width" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="order-form-phone" required>
+              </div>
+            </fieldset>
+
+            <fieldset class="order-form__fieldset order-form__fieldset--bg-color">
+              <div class="order-form__fieldset-wrapper order-form__fieldset-wrapper--bg-color">
+                <legend class="order-form__legend">E-mail</legend>
+                <label class="visually-hidden order-form__label" for="order-form-phone">Email:</label>
+                <input class="order-form__input order-form__input-text order-form__input-text--email order-form__input-text--full-width" type="email" name="email" placeholder="Ваш Email*" id="order-form-phone" required>
+              </div>
             </fieldset>
 
             <fieldset class="order-form__fieldset">
-              <legend class="order-form__legend">E-mail</legend>
-              <label class="visually-hidden order-form__label" for="order-form-phone">Email:</label>
-              <input class="order-form__input order-form__input-text order-form__input-text--email" type="email" name="email" placeholder="Ваш Email*" id="order-form-phone" required>
+              <div class="order-form__fieldset-wrapper">
+                <legend class="order-form__legend">Доп</legend>
+                <textarea class="order-form__textarea" name="additionalinfo" id="order-form-additional-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
             </fieldset>
 
-            <fieldset class="order-form__fieldset">
-              <legend class="order-form__legend">Доп</legend>
-              <textarea class="order-form__textarea" name="additionalinfo" id="order-form-additional-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </fieldset>
-
-            <small class="order-form__additional-note">*Поля обязательны для заполнения</small>
-
-            <button class="order-form__button button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+            <div class="order-form__bottom">
+              <small class="order-form__additional-note">*Поля обязательны для заполнения</small>
+              <button class="order-form__button button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+            </div>
           </form>
         </div>
       </section>
