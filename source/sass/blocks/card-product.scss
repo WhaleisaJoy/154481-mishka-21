@@ -1,14 +1,20 @@
-.card-product {
-  border: 1px solid $catalog-item-line;
-}
-
 .card-product__product-link {
   display: block;
 }
 
 .card-product__img {
   display: block;
-  margin-bottom: 28px;
+}
+
+.card-product__info {
+  padding: 28px;
+  border: 1px solid $catalog-item-line;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
 
 .card-product__title {
@@ -28,6 +34,18 @@
   font-size: 13px;
   line-height: 30px;
   color: $basic-dark;
+}
+
+.card-product__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 23px;
+  border-top: 1px solid $line-color;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }
 
 .card-product__price {
