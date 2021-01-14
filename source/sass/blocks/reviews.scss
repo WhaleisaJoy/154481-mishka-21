@@ -1,29 +1,37 @@
 .reviews__wrapper {
   position: relative;
   max-width: 1150px;
-  margin: 0 auto 38px;
+  margin: 0 auto 44px;
   padding: 0 30px 45px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
-    padding: 0 50px 85px;
+    margin-bottom: 87px;
+    padding: 83px 50px 85px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
-    padding: 0 50px 67px 224px;
+    margin-bottom: 72px;
+    padding: 77px 50px 155px 224px;
   }
 }
 
 .reviews__title {
   margin: 0;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
+  }
 }
 
 .reviews__list {
   @include list-reset;
 
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .reviews__blockqute {
@@ -33,17 +41,35 @@
 .reviews__text {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .reviews__author-name {
   margin: 0;
+  margin-bottom: 3px;
   padding: 0;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width -1) {
+    margin-bottom: 4px;
+    font-size: 18px;
+  }
 }
 
 .reviews__author-nick {
@@ -63,8 +89,9 @@
 
 .reviews__button {
   @media (min-width: $tablet-width) {
+    min-width: 175px;
     position: absolute;
-    top: 0;
+    top: 79px;
     right: 50px;
   }
 }

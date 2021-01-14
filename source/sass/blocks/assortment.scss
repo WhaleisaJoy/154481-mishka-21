@@ -1,8 +1,8 @@
 .assortment {
   background-color: $assortment-background;
-  //background-image: url("../img/assortment-bg.jpg");
-  //background-repeat: no-repeat;
-  //background-position: 0 0;
+  background-image: url("../img/assortment-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center -17px;
 }
 
 .assortment__wrapper {
@@ -10,18 +10,35 @@
   margin: 0 auto 31px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
     padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
   }
 }
 
 .assortment__title {
   margin: 0;
-  padding: 73px 0 120px;
+  padding: 73px 30px 120px;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    padding: 156px 50px 371px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 158px 50px 355px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .assortment__list {
@@ -61,11 +78,20 @@
 }
 
 .assortment__link {
-  display: block;
-  padding: 25px 39px;
-  font-size: 20px;
-  line-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  min-height: 103px;
+  padding: 24px 112px 31px 30px;
+  font-size: 19px;
+  line-height: 24px;
   font-weight: 700;
   align-items: center;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 112px 31px 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
