@@ -10,14 +10,14 @@
   display: flex;
 
   @media (max-width: $tablet-width - 1) {
-    margin-bottom: 28px;
+    margin-bottom: 38px;
     border: 1px solid $line-color;
   }
 }
 
 .slider__button {
   width: 50%;
-  min-height: 52px;
+  min-height: 50px;
   background-color: $basic-white;
   border: none;
 

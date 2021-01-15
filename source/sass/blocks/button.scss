@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding: 16px 20px;
+  padding: 14px 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -19,5 +19,9 @@
 
   &:active {
     color: rgba($basic-white, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
   }
 }

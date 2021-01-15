@@ -1,10 +1,15 @@
 .main-nav {
   display: grid;
 
+  &--closed &__list {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-areas:
       "logo      user-list"
       "site-list delivery";
+    height: 88px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,9 +22,14 @@
 
 .main-nav__logo {
   display: block;
+  margin: 0 auto;
+  padding: 22px 22px;
 
   @media (min-width: $tablet-width) {
     grid-area: logo;
+    width: fit-content;
+    margin: 0;
+    padding: 21px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,27 +42,69 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
     margin: 0;
   }
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 3%;
-  right: 5%;
+  top: 0;
+  right: 0;
+  width: 79px;
+  height: 79px;
+  background-color: transparent;
+  border: none;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 31px;
+  width: 20px;
+  height: 2px;
+  background-color: $burger-color;
+  box-shadow: 0 6px 0 0 $burger-color, 0 12px 0 0 $burger-color;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: 27px;
+    width: 27px;
+    height: 2px;
+    background-color: $burger-color;
+    box-shadow: none;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
 .main-nav__delivery {
   display: none;
   margin: 0;
+  font-size: 15px;
+  line-height: 24px;
 
   @media (min-width: $tablet-width) {
     display: block;
     grid-area: delivery;
     justify-self: flex-end;
+    margin-top: 21px;
   }
 }

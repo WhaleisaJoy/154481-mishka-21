@@ -2,9 +2,14 @@
   position: relative;
   max-width: 1150px;
   margin: 0 auto;
-  padding: 22px 30px;
+  //padding: 22px 0;
+  box-shadow: 0 1px 0 $line-color, inset 0 1px 0 $line-color;
+
+  // @media (min-width: $tablet-width) {
+  //   box-shadow: 0 1px 0 $line-color, inset 0 1px 0 $line-color;
+  // }
 
   @media (min-width: $tablet-width) {
-    padding: 22px 50px;
+    padding: 0 50px;
   }
 }
