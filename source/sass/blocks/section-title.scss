@@ -18,6 +18,10 @@
 .section-title--smaller {
   font-size: 17px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .section-title--small {
@@ -27,5 +31,7 @@
 }
 
 .section-title--big {
-  font-size: 27px;
+  @media (max-width: $tablet-width - 1) {
+    font-size: 27px;
+  }
 }
