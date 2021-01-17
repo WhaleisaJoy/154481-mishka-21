@@ -27,5 +27,7 @@
 }
 
 .section-title--big {
-  font-size: 27px;
+  @media (max-width: $tablet-width - 1) {
+    font-size: 27px;
+  }
 }
