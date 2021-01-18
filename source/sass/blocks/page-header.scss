@@ -1,9 +1,17 @@
+.page-header {
+  border-bottom: 1px solid $line-color;
+
+  @media (max-width: $tablet-width - 1) {
+    box-shadow: inset 0 1px 0 $line-color;
+  }
+}
+
 .page-header__wrapper {
   position: relative;
   max-width: 1150px;
   margin: 0 auto;
   //padding: 22px 0;
-  box-shadow: 0 1px 0 $line-color, inset 0 1px 0 $line-color;
+  //box-shadow: 0 1px 0 $line-color, inset 0 1px 0 $line-color;
 
   // @media (min-width: $tablet-width) {
   //   box-shadow: 0 1px 0 $line-color, inset 0 1px 0 $line-color;
@@ -11,5 +19,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
+    z-index: 1;
   }
 }

@@ -2,13 +2,30 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .copyright__text {
   margin: 0;
+  margin-right: 27px;
   padding: 0;
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
   color: $basic-black;
+}
+
+.copyright__link {
+  &:hover path,
+  &:focus path {
+    fill: $footer-elements-hover;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link-img {
+  display: block;
 }

@@ -1,0 +1,31 @@
+.section-zigsaz-divider {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-image: url("../img/section-zigsaz-divider-mobile.svg");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      height: 17px;
+      background-size: 772px 17px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 23px;
+      background-repeat: no-repeat;
+      background-position: center 0;
+      background-size: 1050px 23px;
+    }
+  }
+}

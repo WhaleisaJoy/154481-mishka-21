@@ -9,7 +9,7 @@
     grid-template-areas:
       "logo      user-list"
       "site-list delivery";
-    height: 88px;
+    height: 87px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,17 +34,24 @@
 
   @media (min-width: $desktop-width) {
     justify-self: center;
+    padding: 8px 0;
   }
 }
 
 .main-nav__logo-image {
   display: block;
+  width: 86px;
+  height: 35px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 113px;
-    height: 46px;
+    height: auto;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
   }
 }
 

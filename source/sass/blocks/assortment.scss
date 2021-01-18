@@ -1,8 +1,46 @@
 .assortment {
+  position: relative;
   background-color: $assortment-background;
-  background-image: url("../img/assortment-bg.jpg");
+  background-image: url("../img/assortment-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center -17px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/assortment-bg-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/assortment-bg-tablet-desktop.jpg");
+    background-position: center 0;
+    background-size: 768px auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      right: 0;
+      height: 24px;
+      background-image: url("../img/assortment-zigzag-tablet.svg");
+      background-repeat: repeat-x;
+      background-position: 0 0;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/assortment-bg-tablet-desktop@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 34px;
+      bottom: -19px;
+      background-image: url("../img/assortment-zigzag-desktop.svg");
+      background-position: center 0;
+      background-size: 1254px 34px;
+    }
+  }
 }
 
 .assortment__wrapper {
@@ -53,27 +91,71 @@
 }
 
 .assortment__item {
+  position: relative;
   width: 100%;
+  background-repeat: no-repeat;
   cursor: pointer;
-}
 
-.assortment__item--decor {
-  background-color: $assortment-item-decor-background;
 
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $assortment-item-decor-background-active;
+  &:hover::after,
+  &:focus::after {
+    opacity: 0.7;
   }
-}
 
-.assortment__item--toys {
-  background-color: $assortment-item-toys-background;
+  &:active::after {
+    opacity: 0.3;
+  }
 
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: $assortment-item-toys-background-active;
+
+  &--decor {
+    background-color: $assortment-item-decor-background;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $assortment-item-decor-background-active;
+    }
+  }
+
+  &--toys {
+    background-color: $assortment-item-toys-background;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $assortment-item-toys-background-active;
+    }
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+  }
+
+  &--decor::after {
+    width: 40px;
+    height: 62px;
+    right: 36px;
+    background-image: url("../img/assortment-decor.svg");
+    background-position: 0 0;
+  }
+
+  &--toys::after {
+    width: 60px;
+    height: 60px;
+    right: 27px;
+    background-image: url("../img/assortment-toys.svg");
+    background-position: 0 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--toys::after {
+      right: 34px;
+    }
   }
 }
 

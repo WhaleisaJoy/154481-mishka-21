@@ -24,11 +24,24 @@
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    & .user-list__text {
+      opacity: 0.6;
+    }
+
+    & path {
+      fill: $special-cyan;
+      opacity: 1;
+    }
   }
 
   &:active {
-    opacity: 0.3;
+    & .user-list__text {
+      opacity: 0.3;
+    }
+
+    & path {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -60,6 +73,14 @@
   top: 50%;
   left: 30px;
   transform: translateY(-50%);
+
+  &--search {
+    left: 32px;
+  }
+
+  & path {
+    opacity: 0.2;
+  }
 }
 
 .user-list__text {
