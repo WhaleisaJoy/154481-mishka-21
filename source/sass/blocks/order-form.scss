@@ -341,8 +341,29 @@
   border: 2px solid rgba($basic-black, 0.3);
 }
 
+.order-form__input--checkbox:checked + .order-form__label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 23px;
+  height: 16px;
+  background-image: url("../img/checkbox-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+    left: 10px;
+    width: 32px;
+    height: 22px;
+    background-size: contain;
+  }
+}
+
 
 .order-form__input-text {
+  position: relative;
   padding: 17px 0 16px;
   font-family: $font-family;
   font-size: 17px;
@@ -391,6 +412,58 @@
 }
 
 
+.order-form__input-wrapper {
+  position: relative;
+}
+
+.order-form__icon {
+  position: absolute;
+  opacity: 0.2;
+
+  &--phone {
+    bottom: 17px;
+    right: 7px;
+  }
+
+  &--email {
+    bottom: 15px;
+    right: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--phone {
+      right: 26px;
+    }
+
+    &--email {
+      right: 22px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--phone {
+      right: 8px;
+    }
+
+    &--email {
+      right: 4px;
+    }
+  }
+}
+
+.order-form__input-text:hover + .order-form__icon,
+.order-form__input-text:focus + .order-form__icon,
+.order-form__input-text:active + .order-form__icon {
+  opacity: 1;
+}
+
+.order-form__input-text:hover + .order-form__icon path,
+.order-form__input-text:focus + .order-form__icon path,
+.order-form__input-text:active + .order-form__icon path {
+  fill: $form-input;
+}
+
+
 .order-form__textarea {
   width: 100%;
   min-height: 142px;
@@ -407,6 +480,11 @@
     font-size: 17px;
     line-height: 18px;
     color: rgba($basic-black, 0.3);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $form-legeng-line;
   }
 
   @media (min-width: $tablet-width) {
