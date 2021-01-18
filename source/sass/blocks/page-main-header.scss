@@ -3,19 +3,19 @@
 }
 
 .page-main-header__wrapper {
-  margin: 0 auto 17px;
-  padding: 73px 30px 74px;
+  margin: 0 auto 30px;
+  padding: 74px 30px 73px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 80px;
     padding: 102px 50px 73px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1150px;
-    margin-bottom: 118px;
-    padding: 103px 50px 94px;
+    margin-bottom: 131px;
+    padding: 102px 50px 93px;
   }
 }
 
