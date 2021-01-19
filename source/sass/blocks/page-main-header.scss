@@ -7,6 +7,10 @@
   padding: 74px 30px 73px;
   text-align: center;
 
+  &--page-knitting-to-order {
+    margin-bottom: 17px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
     padding: 102px 50px 73px;
