@@ -28,7 +28,7 @@
       opacity: 0.6;
     }
 
-    & path {
+    & .user-list__icon {
       fill: $special-cyan;
       opacity: 1;
     }
@@ -39,7 +39,7 @@
       opacity: 0.3;
     }
 
-    & path {
+    & .user-list__icon {
       opacity: 0.3;
     }
   }
@@ -72,14 +72,11 @@
   position: absolute;
   top: 50%;
   left: 30px;
+  opacity: 0.2;
   transform: translateY(-50%);
 
   &--search {
     left: 32px;
-  }
-
-  & path {
-    opacity: 0.2;
   }
 }
 

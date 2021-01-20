@@ -16,16 +16,17 @@
 }
 
 .copyright__link {
-  &:hover path,
-  &:focus path {
+  &:hover .copyright__link-img,
+  &:focus .copyright__link-img {
     fill: $footer-elements-hover;
   }
 
-  &:active path {
+  &:active .copyright__link-img {
     opacity: 0.3;
   }
 }
 
 .copyright__link-img {
   display: block;
+  fill: $special-cyan;
 }
