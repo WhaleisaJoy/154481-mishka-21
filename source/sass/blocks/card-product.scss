@@ -97,12 +97,8 @@
 
 .card-product__add-to-cart:hover .card-product__add-to-cart-icon,
 .card-product__add-to-cart:focus .card-product__add-to-cart-icon {
-  opacity: 1;
-}
-
-.card-product__add-to-cart:hover .card-product__add-to-cart-icon path,
-.card-product__add-to-cart:focus .card-product__add-to-cart-icon path {
   fill: $special-cyan;
+  opacity: 1;
 }
 
 .card-product__add-to-cart:active .card-product__add-to-cart-icon {
