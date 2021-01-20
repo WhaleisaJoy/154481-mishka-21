@@ -16,7 +16,7 @@
 }
 
 .order-form__fieldset-wrapper {
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 
   &--color,
   &--name {
@@ -58,6 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1150px;
     grid-template-columns: 1fr 4fr 1fr;
 
     &--color {
@@ -454,13 +455,8 @@
 .order-form__input-text:hover + .order-form__icon,
 .order-form__input-text:focus + .order-form__icon,
 .order-form__input-text:active + .order-form__icon {
-  opacity: 1;
-}
-
-.order-form__input-text:hover + .order-form__icon path,
-.order-form__input-text:focus + .order-form__icon path,
-.order-form__input-text:active + .order-form__icon path {
   fill: $form-input;
+  opacity: 1;
 }
 
 
@@ -507,6 +503,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1150px;
+    margin: 0 auto;
     padding: 0 225px;
   }
 }
