@@ -12,12 +12,12 @@
     margin-right: 41px;
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover .social__link-img,
+  &:focus .social__link-img {
     fill: $footer-elements-hover;
   }
 
-  &:active path {
+  &:active .social__link-img {
     opacity: 0.3;
   }
 }
