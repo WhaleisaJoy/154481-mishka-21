@@ -1,5 +1,33 @@
 .page-main-header {
   background-color: $page-main-header-background;
+
+  @media (min-width: $tablet-width) {
+    &--zigzag {
+      position: relative;
+    }
+
+    &--zigzag::after {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      right: 0;
+      height: 24px;
+      background-image: url("../img/assortment-zigzag-tablet.svg");
+      background-repeat: repeat-x;
+      background-position: 0 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--zigzag::after {
+      height: 34px;
+      bottom: -19px;
+      background-image: url("../img/assortment-zigzag-desktop.svg");
+      background-position: center 0;
+      background-size: 1254px 34px;
+    }
+  }
 }
 
 .page-main-header__wrapper {
