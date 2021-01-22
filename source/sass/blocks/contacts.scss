@@ -26,7 +26,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 54px;
-    padding: 79px 59px 0 0;
+    padding: 79px 50px 0 0;
   }
 }
 
@@ -75,7 +75,7 @@
 }
 
 .contacts__table-body {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     display: flex;
   }
 }
