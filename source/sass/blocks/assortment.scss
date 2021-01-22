@@ -59,7 +59,7 @@
 
 .assortment__title {
   margin: 0;
-  padding: 73px 30px 120px;
+  padding: 72px 30px 120px;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
@@ -153,6 +153,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    &::after {
+      top: calc(50% + 2px);
+    }
+
     &--toys::after {
       right: 34px;
     }

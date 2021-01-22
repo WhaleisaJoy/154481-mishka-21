@@ -75,7 +75,7 @@
   line-height: 24px;
   color: $basic-black;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width -1) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     margin-bottom: 4px;
     font-size: 18px;
   }

@@ -1,7 +1,6 @@
 .week-product__wrapper {
   display: flex;
   flex-direction: column;
-  //align-items: flex-start;
   max-width: 1150px;
   margin: 0 auto 31px;
   padding: 0 30px 42px;
@@ -64,6 +63,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     left: -143px;
+    margin-top: -11px;
     padding-right: 0;
   }
 }
@@ -86,7 +86,7 @@
 }
 
 .week-product__feautures {
-  margin-bottom: 28px;
+  margin-bottom: 29px;
   border-spacing: 0;
   border-collapse: collapse;
   font-size: 15px;
@@ -111,7 +111,7 @@
 }
 
 .week-product__img-wrapper {
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   text-align: center;
 
   @media (min-width: $tablet-width) {

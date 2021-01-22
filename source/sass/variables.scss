@@ -41,9 +41,14 @@ $burger-color: #231f20;
 
 $footer-elements-hover: #46c1ae;
 
+$modal-border: #c6c6c6;
+$modal-shadow: #000101;
+
 // Font Family
 $font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
 
 // Viewports
+$mobile-max-width: 767px;
 $tablet-width: 768px;
+$tablet-max-width: 1149px;
 $desktop-width: 1150px;

@@ -21,7 +21,7 @@
 .production-process__title {
   position: relative;
   margin: 0;
-  padding: 22px 13px 27px 91px;
+  padding: 21px 13px 26px 90px;
   border: 1px solid $line-color;
   border-bottom: none;
 
@@ -57,6 +57,8 @@
 }
 
 .production-process__video-wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     order: -1;
   }
@@ -71,8 +73,33 @@
   display: block;
 }
 
+.production-process__video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 101px;
+  height: 77px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/video-play.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
+}
+
 .production-process__info {
-  padding: 34px 32px 32px 33px;
+  padding: 35px 32px 32px 33px;
   border: 1px solid $line-color;
   border-top: none;
 

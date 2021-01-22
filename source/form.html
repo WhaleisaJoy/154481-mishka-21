@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка - Вязание на заказ</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body inner-page">
     <header class="page-header">
       <div class="page-header__wrapper">
 
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <a class="main-nav__logo" href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -28,7 +28,7 @@
               <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item site-list__item--big">
-              <a href="blank.html">Вязание на заказ</a>
+              <a>Вязание на заказ</a>
             </li>
             <li class="site-list__item site-list__item--small site-list__item--new-arrivals">
               <a href="blank.html">Новые поступления</a>
@@ -41,14 +41,14 @@
           <div class="main-nav__list user-list">
             <a class="user-list__item user-list__item--search" href="blank.html">
               <svg class="user-list__icon user-list__icon--search" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
+                <use xlink:href="img/sprite.svg#search"></use>
               </svg>
               <span class="user-list__text user-list__text--search">Поиск по сайту</span>
             </a>
 
             <a class="user-list__item user-list__item--cart" href="blank.html">
               <svg class="user-list__icon user-list__icon--cart" width="21" height="18">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
+                <use xlink:href="img/sprite.svg#cart"></use>
               </svg>
               <span class="user-list__text user-list__text--cart">Корзина: пока пуста</span>
             </a>
@@ -188,7 +188,7 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
           <svg class="page-footer__logo-image" width="102" height="34">
-            <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
 
@@ -198,7 +198,7 @@
               <a class="social__link social__link--instagram" href="blank.html">
                 <span class="visually-hidden">Инстаграм</span>
                 <svg class="social__link-img" width="22" height="21">
-                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  <use xlink:href="img/sprite.svg#socials-insta"></use>
                 </svg>
               </a>
             </li>
@@ -207,7 +207,7 @@
               <a class="social__link social__link--facebook" href="blank.html">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="social__link-img" width="15" height="28">
-                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  <use xlink:href="img/sprite.svg#socials-fb"></use>
                 </svg>
               </a>
             </li>
@@ -216,7 +216,7 @@
               <a class="social__link social__link--twitter" href="blank.html">
                 <span class="visually-hidden">Твиттер</span>
                 <svg class="social__link-img" width="23" height="20">
-                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  <use xlink:href="img/sprite.svg#socials-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -227,11 +227,13 @@
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__link-img" width="27" height="34">
-              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
+
+    <script src="js/script.min.js"></script>
   </body>
 </html>
