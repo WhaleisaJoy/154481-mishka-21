@@ -24,6 +24,19 @@
   }
 }
 
+.inner-page .page-footer__logo {
+  @media (min-width: $tablet-width) {
+    &:hover .page-footer__logo-image,
+    &:focus .page-footer__logo-image {
+      fill: $footer-elements-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
 .page-footer__logo-image {
   display: block;
 }

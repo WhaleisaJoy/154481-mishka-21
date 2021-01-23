@@ -42,12 +42,20 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
     padding: 102px 50px 73px;
+
+    &--page-knitting-to-order {
+      margin-bottom: 68px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1150px;
     margin-bottom: 131px;
     padding: 102px 50px 93px;
+
+    &--page-knitting-to-order {
+      margin-bottom: 119px;
+    }
   }
 }
 
