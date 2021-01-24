@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка - Вязание на заказ</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body inner-page">
     <header class="page-header">
@@ -39,7 +41,7 @@
           </ul>
 
           <div class="main-nav__list user-list">
-            <a class="user-list__item user-list__item--search" href="blank.html">
+            <a class="user-list__item user-list__item--search" href="blank.html" aria-label="Поиск по сайту">
               <svg class="user-list__icon user-list__icon--search" width="18" height="18">
                 <use xlink:href="img/sprite.svg#search"></use>
               </svg>
@@ -68,6 +70,8 @@
       </header>
 
       <section class="form">
+        <h2 class="visually-hidden">Форма заказа </h2>
+
         <div class="form__wrapper">
           <p class="form__text-intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
@@ -75,7 +79,7 @@
 
             <fieldset class="order-form__fieldset">
               <div class="order-form__fieldset-wrapper">
-                <legend class="order-form__legend order-form__legend--radio">ТИП</legend>
+                <h3 class="order-form__heading order-form__heading--radio">ТИП</h3>
                 <ul class="order-form__list order-form__list--radio">
                   <li class="order-form__option order-form__option--radio">
                     <input class="visually-hidden order-form__input order-form__input--radio" type="radio" name="type" id="order-form-type-accessory" checked>
@@ -91,7 +95,7 @@
 
             <fieldset class="order-form__fieldset order-form__fieldset--bg-color">
               <div class="order-form__fieldset-wrapper order-form__fieldset-wrapper--color order-form__fieldset-wrapper--bg-color">
-                <legend class="order-form__legend order-form__legend--checkbox">ЦВет</legend>
+                <h3 class="order-form__heading order-form__heading--checkbox">ЦВет</h3>
                 <ul class="order-form__list order-form__list--checkbox">
                   <li class="order-form__option order-form__option--checkbox">
                     <input class="visually-hidden order-form__input order-form__input--checkbox" type="checkbox" name="white" id="order-form-color-white" checked>
@@ -123,7 +127,7 @@
 
             <fieldset class="order-form__fieldset">
               <div class="order-form__fieldset-wrapper order-form__fieldset-wrapper--name">
-                <legend class="order-form__legend order-form__legend--name">ФИО</legend>
+                <h3 class="order-form__heading order-form__heading--name">ФИО</h3>
                 <ul class="order-form__list">
                   <li class="order-form__option order-form__option--text">
                     <label class="order-form__label order-form__label--text" for="order-form-user-name">Имя:</label>
@@ -143,7 +147,7 @@
 
             <fieldset class="order-form__fieldset order-form__fieldset--bg-color order-form__fieldset--without-margin-bottom">
               <div class="order-form__fieldset-wrapper order-form__fieldset-wrapper--phone order-form__fieldset-wrapper--bg-color order-form__fieldset-wrapper--bg-color-top">
-                <legend class="order-form__legend order-form__legend--phone">тел</legend>
+                <h3 class="order-form__heading order-form__heading--phone">тел</h3>
                 <label class="visually-hidden order-form__label" for="order-form-phone">телефон:</label>
                 <div class="order-form__input-wrapper">
                   <input class="order-form__input order-form__input-text order-form__input-text--phone order-form__input-text--full-width" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="order-form-phone" required>
@@ -156,7 +160,7 @@
 
             <fieldset class="order-form__fieldset order-form__fieldset--bg-color">
               <div class="order-form__fieldset-wrapper order-form__fieldset-wrapper--email order-form__fieldset-wrapper--bg-color order-form__fieldset-wrapper--bg-color-bottom">
-                <legend class="order-form__legend order-form__legend--email">E-mail</legend>
+                <h3 class="order-form__heading order-form__heading--email">E-mail</h3>
                 <label class="visually-hidden order-form__label" for="order-form-email">Email:</label>
                 <div class="order-form__input-wrapper">
                   <input class="order-form__input order-form__input-text order-form__input-text--email order-form__input-text--full-width" type="email" name="email" placeholder="Ваш Email*" id="order-form-email" required>
@@ -169,7 +173,7 @@
 
             <fieldset class="order-form__fieldset">
               <div class="order-form__fieldset-wrapper order-form__fieldset-wrapper--additional">
-                <legend class="order-form__legend order-form__legend--additional">Доп</legend>
+                <h3 class="order-form__heading order-form__heading--additional">Доп</h3>
                 <textarea class="order-form__textarea" name="additionalinfo" id="order-form-additional-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
             </fieldset>
@@ -186,7 +190,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html">
+        <a class="page-footer__logo" href="index.html" aria-label="Логотип интернет-магазина игрушек ручной работы Мишка">
           <svg class="page-footer__logo-image" width="102" height="34">
             <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
@@ -225,7 +229,7 @@
 
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано HTMLAcademy">
             <svg class="copyright__link-img" width="27" height="34">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>

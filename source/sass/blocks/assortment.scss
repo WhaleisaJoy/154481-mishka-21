@@ -67,13 +67,13 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    padding: 156px 50px 371px;
+    padding: 156px 50px 366px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 158px 50px 355px;
+    padding: 158px 50px 350px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -96,13 +96,14 @@
   background-repeat: no-repeat;
   cursor: pointer;
 
-
-  &:hover::after,
-  &:focus::after {
-    opacity: 0.7;
+  &:hover,
+  &:focus-within {
+    .assortment__link::after {
+      opacity: 0.7;
+    }
   }
 
-  &:active::after {
+  &:active .assortment__link::after {
     opacity: 0.3;
   }
 
@@ -111,7 +112,7 @@
     background-color: $assortment-item-decor-background;
 
     &:hover,
-    &:focus,
+    &:focus-within,
     &:active {
       background-color: $assortment-item-decor-background-active;
     }
@@ -121,14 +122,14 @@
     background-color: $assortment-item-toys-background;
 
     &:hover,
-    &:focus,
+    &:focus-within,
     &:active {
       background-color: $assortment-item-toys-background-active;
     }
   }
 
 
-  &::after {
+  .assortment__link::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -136,7 +137,7 @@
     opacity: 0.5;
   }
 
-  &--decor::after {
+  &--decor .assortment__link::after {
     width: 40px;
     height: 62px;
     right: 36px;
@@ -144,7 +145,7 @@
     background-position: 0 0;
   }
 
-  &--toys::after {
+  &--toys .assortment__link::after {
     width: 60px;
     height: 60px;
     right: 27px;
@@ -153,11 +154,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    &::after {
-      top: calc(50% + 2px);
+    transform: translateY(5px);
+
+    &:hover,
+    &:focus-within,
+    &:active {
+      transform: translateY(0);
     }
 
-    &--toys::after {
+    &--toys .assortment__link::after {
       right: 34px;
     }
   }
@@ -168,6 +173,7 @@
   flex-wrap: wrap;
   vertical-align: middle;
   min-height: 103px;
+  height: 100%;
   padding: 24px 112px 31px 30px;
   font-size: 19px;
   line-height: 24px;
@@ -176,7 +182,7 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 112px 31px 36px;
+    padding: 26px 112px 36px 36px;
     font-size: 20px;
     line-height: 30px;
   }

@@ -21,7 +21,7 @@
 
 .copyright__link {
   &:hover .copyright__link-img,
-  &:focus .copyright__link-img {
+  &:focus-within .copyright__link-img {
     fill: $footer-elements-hover;
   }
 

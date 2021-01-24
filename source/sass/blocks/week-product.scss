@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-template-rows: repeat(5, max-content);
+    grid-template-rows: repeat(6, max-content);
     column-gap: 42px;
     align-items: flex-start;
     margin-bottom: 56px;
@@ -38,7 +38,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     grid-row: 1 / 2;
-    margin-bottom: 15px;
+    margin-bottom: 32px;
     padding-top: 61px;
   }
 }
@@ -83,6 +83,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .week-product__feautures {
@@ -92,13 +96,21 @@
   font-size: 15px;
   line-height: 20px;
 
-  & td {
+  td {
     padding: 7px 0 12px;
     border-bottom: 1px solid $table-underline;
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+
+    td {
+      padding: 5px 0 14px;
+    }
   }
 }
 
@@ -107,6 +119,10 @@
 
   @media (min-width: $tablet-width) {
     width: 33%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 34%;
   }
 }
 

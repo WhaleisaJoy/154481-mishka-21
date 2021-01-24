@@ -13,7 +13,7 @@
   }
 
   &:hover .social__link-img,
-  &:focus .social__link-img {
+  &:focus-within .social__link-img {
     fill: $footer-elements-hover;
   }
 
