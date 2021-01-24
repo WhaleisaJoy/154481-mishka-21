@@ -549,6 +549,8 @@
 
 .order-form__button {
   width: 100%;
+  padding-top: 16px;
+  padding-bottom: 12px;
   font-size: 17px;
 
   @media (min-width: $tablet-width) {
