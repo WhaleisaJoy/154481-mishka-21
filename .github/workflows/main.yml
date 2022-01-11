@@ -39,5 +39,5 @@ jobs:
           # в данном случае его название KEY
           GITHUB_TOKEN: ${{ secrets.09d25a8a21793794a6a64c82d0769cec7a296383}}
           BRANCH: gh-pages
-          FOLDER: public
+          FOLDER: build
           CLEAN: true
